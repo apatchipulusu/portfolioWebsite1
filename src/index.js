@@ -10,8 +10,10 @@ ReactDOM.render(
     <App />
   </Router>,
   document.getElementById("root")
-);
+); //Publish using 'npm run deploy'
 //<React.StrictMode></React.StrictMode>
+//Publishing: git remote add https://github.com/apatchipulusu/apatchipulusu.github.io.git
+
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA

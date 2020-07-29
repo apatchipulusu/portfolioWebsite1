@@ -11,19 +11,23 @@ import FolderIcon from "@material-ui/icons/Folder";
 import HomeIcon from "@material-ui/icons/Home";
 
 import BallotIcon from "@material-ui/icons/Ballot";
-import BuildIcon from "@material-ui/icons/Build";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
   list: {
-    width: 250,
+    width: 200,
   },
 });
 
 export default function TemporaryDrawer({ state, toggle }) {
   const classes = useStyles();
   const list = () => (
-    <div role="presentation" onClick={toggle(false)} onKeyDown={toggle(false)}>
+    <div
+      role="presentation"
+      className={classes.list}
+      onClick={toggle(false)}
+      onKeyDown={toggle(false)}
+    >
       <List>
         <ListItem button key={"Home"} component={Link} to={"/"}>
           <ListItemIcon>
